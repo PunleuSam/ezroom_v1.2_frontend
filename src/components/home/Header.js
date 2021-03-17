@@ -1,14 +1,18 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, NavDropdown, Nav } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressBook, faPhoneSquare, faUser } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Header = () => {
   return (
     <header>
-      <Navbar bg="success" variant="dark">
+      <Navbar bg="dark" variant="dark">
+        <Nav className="container-fluid">
 
-        {/**logo and brand */}
+          {/**logo and brand */}
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -42,7 +46,7 @@ const Header = () => {
         </NavDropdown>
 
         {/**for price range dropdown */}
-        <NavDropdown title="Price">
+        <NavDropdown title="Price" >
           <NavDropdown.Item>$0 - $50</NavDropdown.Item>
           <NavDropdown.Item>$50 - $100</NavDropdown.Item>
           <NavDropdown.Item>$100 - $200</NavDropdown.Item>
@@ -51,22 +55,30 @@ const Header = () => {
         </NavDropdown>
 
         {/**about this website.... */}
-        <Nav.Link href="#about">About</Nav.Link>
+        <Nav.Link href="#about"><FontAwesomeIcon icon={ faAddressBook }/> About</Nav.Link>
 
         {/**contact to our team */}
         <Nav.Link href="#contact">
-          Contact<FontAwesomeIcon icon="phone"></FontAwesomeIcon>
+        <FontAwesomeIcon icon={ faPhoneSquare } /> Contact
         </Nav.Link>
 
         {/**login and sign up */}
-        <Nav.Link href="#log">
-          Login
-          <FontAwesomeIcon icon="user"></FontAwesomeIcon>
-        </Nav.Link>
-      </Navbar>
-    </header>
+        <Nav.Item className="ml-auto">
 
-    
+          <Nav.Link href= "#signup">
+          <FontAwesomeIcon icon = { faUser }/>
+          </Nav.Link>
+        </Nav.Item>
+
+
+
+        </Nav>
+        
+
+      </Navbar>
+
+    </header>
+  
   );
 };
 
