@@ -1,0 +1,46 @@
+
+
+/*
+.main-header {
+    color: black;
+    background-color: #118692;
+    padding-top: 3em;
+    position: fixed;
+    top: 0pm;
+    width: 100%;
+}
+*/
+.main-search {
+    border-radius: 1em;
+    margin: 10em auto 10em auto  ; /* T R B L*/
+    padding: 3em;
+    width: 50em;
+    box-shadow: 0.3em 0.3em 0.3em 0em lightgray;
+    background-color: #118692;
+    
+}
+Button {
+    width: auto;
+}
+.col {
+    color: black;
+}
+.Navbar {
+    background-color: #118692;
+    color: black;
+    padding-top: 2em;
+}
+.container-fluid {
+    display: inline-block;
+    
+}
+@media only screen and (max-width: 500px) {
+    .container-fluid,
+    .main-search,
+    .main-header {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+
+  }

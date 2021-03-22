@@ -1,23 +1,23 @@
 import React from "react";
+import "./login.css";
 import { Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const login = () => {
   return (
-    <div>
-      {/**logo and brand */}
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#register">
-          <Link to="/register">
-            <img
-              alt=""
-              src="/home.png"
-              width="40"
-              height="40"
-              className="d-inline-block align-top"
-            />
-          </Link>
-          eZRoom
+    <div className="login"> 
+      <Navbar>
+          {/**logo and brand */}
+          <Navbar.Brand>
+          <a href="/home">
+          <img
+            alt="homelogo"
+            src="/home.png"
+            width="60"
+            height="60"
+            className="d-inline-block align-top"
+          />
+          </a>
         </Navbar.Brand>
       </Navbar>
 

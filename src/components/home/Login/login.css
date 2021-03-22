@@ -1,0 +1,31 @@
+form {
+  margin: auto auto auto auto;
+  /*border: solid black 1px;*/
+  border-radius: 1em;
+  padding: 4em;
+  overflow: hidden;
+  width: 30em;
+  box-shadow: 0.3em 0.3em 0.3em 0em lightgray;
+  background-color: #fccf17;
+}
+/*
+.login {
+  background-color: lightgoldenrodyellow;
+}*/
+/**
+.container {
+    background-image: url("bg_login.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+}
+*/
+
+@media only screen and (max-width: 500px) {
+  form {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,26 @@
+
+
+
+
+.main-footer {
+    color: black;
+    background-color: #118692;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+.col {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    .main-footer, .col, .row, .container {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+
+
+}

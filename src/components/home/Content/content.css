@@ -1,0 +1,30 @@
+
+
+
+.main-content {
+    border-radius: 1em;
+    margin: 10em auto 10em auto  ; /* T R B L*/
+    padding: 3em;
+    width: 50em;
+    
+    /*box-shadow: 0.3em 0.3em 0.3em 0em lightgray; */
+    background-color: #118692;
+}
+h4 {
+    text-align: center;
+}
+.main-Col {
+    width: auto;
+}
+.content-Col {
+    width: 30%;
+}
+
+@media only screen and (max-width: 500px) {
+    .main-content {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+
+  }
